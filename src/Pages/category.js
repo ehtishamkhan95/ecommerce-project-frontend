@@ -53,9 +53,9 @@ const CategoryPage = () => {
                 </div>
                 <div className="my-4 mx-auto flex w-10/12 flex-col items-start justify-between">
                   <div className="mb-2 flex">
-                    <p className="mr-3 text-sm font-semibold">{`$${product.price}`}</p>
+                    <p className="mr-3 text-sm font-semibold">{`Rs. ${product.price}`}</p>
                     {product.discountedPrice && (
-                      <del className="text-xs text-gray-400">{` $${product.discountedPrice}`}</del>
+                      <del className="text-xs text-gray-400">{`Rs. ${product.discountedPrice}`}</del>
                     )}
                   </div>
                   <h3 className="mb-2 text-sm text-gray-400">{product.title}</h3>
